@@ -40,3 +40,30 @@ img1
 Create DynamoDB, SQS and S3 Bucket before proceeding with this step.
 
 1. Repeat steps 1-8
+2. Add a trigger, this time instead of CloudWatch, the trigger will be SQS, select the 'producer' queue.
+
+## DynamoDB
+
+1. Navigate to DynamoDB
+2. Create a table named "fang". The table needs to be named this way unless you change the variables in the consumer.py file.
+3. Primary Key has to be named "name" for a similar reason as before.
+4. Add some company names as entries into the database.
+
+## SQS
+
+1. Navigate to SQS.
+2. Create a queue called "producer" with all the default settings.
+
+## S3 Bucket
+
+1. Navitage to S3.
+2. Create a bucket called "fangsentiment-jaryl" with all the default settings. You probably should change the code in consumer.py by giving the bucket a new name 
+as bucket names have to be unique in the region.
+
+## Results
+
+If you followed all the steps without encountering any errors that this repo did not address, you will be able to see the results if you navigate into the s3 bucket. You will see it being populated periodically as new entries are added to DynamoDB.
+
+img2
+
+There is an extension of entity extraction available in the code to deploy.
