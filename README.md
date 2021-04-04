@@ -33,7 +33,7 @@ Fill up all the relevant naming conventions
 8. Navigate to AWS Lambda, the function created through cloud9 will be deployed there. Select it -> Configuration -> Permissions -> Edit Execution Role -> Select the role created in step 7.
 9. Now we will add a trigger. Create a CloudWatch Trigger (Event Bridge) with a new rule, name it appropriately, under "Schedule Expression" type rate(1 minute). Deploy this trigger.
 
-img1 
+![Cloud9](https://github.com/jnganzh/AWS-serverless/blob/main/tutorial-imgs/1-cloud9lambda.JPG)
 
 ### Consumer Function
 
@@ -64,6 +64,6 @@ as bucket names have to be unique in the region.
 
 If you followed all the steps without encountering any errors that this repo did not address, you will be able to see the results if you navigate into the s3 bucket. You will see it being populated periodically as new entries are added to DynamoDB.
 
-img2
+![S3](https://github.com/jnganzh/AWS-serverless/blob/main/tutorial-imgs/2-s3bucket.JPG)
 
 There is an extension of entity extraction available in the code to deploy.
