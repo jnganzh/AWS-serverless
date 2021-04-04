@@ -1,8 +1,8 @@
 # AWS-serverless
 
-Forked from https://github.com/noahgift/awslambda
-
 ## Introduction
+
+Forked from https://github.com/noahgift/awslambda
 
 This repository aims to guide you through building a Serverless Data Engineering Pipeline. It will consist of setting up AWS Lambda functions, AWS Cloud9, AWS SQS, AWS DynamoDB, CloudWatch, AWS Comprehend and AWS S3.
 
